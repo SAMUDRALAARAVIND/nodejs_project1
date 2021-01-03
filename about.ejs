@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .temp {
+           border-color: black;
+           display: block;
+           background-color:white;
+           color: black;
+           padding: 4px 4px 4px 4px;
+           justify-content: center;
+           border-radius: 1%;
+           width:300px
+       }
+    </style>
+</head>
+<body style="background-color: cornflowerblue;">
+
+      <% for (var person of message) { %>
+        <div class="temp" >
+        <ul>
+          <li><%= person.studentid %></li>
+          <li><%= person.firstname %></li>
+          <li><%= person.lastname %></li>
+          <li><%= person.gmail %></li>
+        </ul>
+    </div>
+        <br>
+        <% } %>
+</body>
+</html>
